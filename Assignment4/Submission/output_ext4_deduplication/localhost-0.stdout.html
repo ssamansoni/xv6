@@ -1,0 +1,158 @@
+<title>Vdbench output/localhost-0.stdout.html</title><pre>
+stdout/stderr for slave=localhost-0
+
+18:59:41.225 18:59:41.224 SlaveJvm execution parameter:  '-m localhost'
+18:59:41.226 18:59:41.224 SlaveJvm execution parameter:  '-n localhost-10-221114-18.59.40.348'
+18:59:41.227 18:59:41.224 SlaveJvm execution parameter:  '-l localhost-0'
+18:59:41.227 18:59:41.225 SlaveJvm execution parameter:  '-p 5570'
+18:59:41.227 18:59:41.225 SlaveJvm positional parameter: 'SlaveJvm'
+18:59:41.329 18:59:41.328 successfully connected to master localhost
+18:59:41.329 18:59:41.329 Connection to localhost using port 5570 successful
+18:59:41.722 18:59:41.722 ticks_per_second: 100
+18:59:41.763 18:59:41.763 execute(): ls -l /media/amjed/ext4
+18:59:41.818 18:59:41.818 Configuration interpretation took 0.09 seconds
+
+Link to Run Definitions:         <A HREF="#_692342133">format_for_rd1 For loops: None</A>
+                                 <A HREF="#_578866604">rd1 For loops: None</A>
+
+18:59:42.233 18:59:42.232 Beginning of run setup
+18:59:42.234 18:59:42.233 File '/var/log/messages' does not exist. Monitoring bypassed
+18:59:42.234 18:59:42.233 **********************
+18:59:42.234 
+18:59:42.234 
+18:59:42.235 18:59:42.233 File '/var/log/messages.1' does not exist. Monitoring bypassed
+18:59:42.311 18:59:42.311 Deleting old file structure.
+18:59:42.312 18:59:42.312 Starting initializeFileAnchor for rd=format_for_rd1 For loops: None anchor=fsd1
+18:59:42.313 18:59:42.313 Completed the creation of the directory list for /media/amjed/ext4: 20 directories.
+18:59:42.314 18:59:42.314 Generated 160 file names; total anchor size: 160m (167,772,160)
+18:59:42.328 18:59:42.327 Created flipflop bitmap for fsd1. 1 bitmaps for a total of 160 bits.
+18:59:42.331 18:59:42.328 Creating bitmap for unique blocks for fsd=fsd1. 1 bitmaps for a total of 160 bits, identifying 32 unique blocks
+18:59:42.331 18:59:42.330 Writing control file for anchor=/media/amjed/ext4 at start of run.
+18:59:42.371 18:59:42.371 Completed control file for anchor=/media/amjed/ext4 at start of run.  dirs: 20/0 files: 160/0 sizes: 160m/0/0/0
+18:59:42.374 18:59:42.374 Completed initializeFileAnchor for fsd1: 0.06
+18:59:42.434 18:59:42.433 Started 8 threads for fwd=format,fsd=fsd1
+18:59:42.434 18:59:42.433 Started 8 FwgThreads for rd=format_for_rd1 For loops: None
+18:59:42.434 18:59:42.434 Waiting for task synchronization
+18:59:42.434 18:59:42.434 Requesting full garbage collection
+18:59:42.435 18:59:42.435 GcTracker: cum:   0 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   130 used:    33 free:    97 
+18:59:42.448 18:59:42.447 GcTracker: cum:   1 intv:  1 ms:       9 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    23 free:   105 
+18:59:42.448 18:59:42.448 task_wait_start_complete() end
+
+<a name="_692342133"></a><i><b>18:59:43.003 Starting RD=format_for_rd1</b></i>
+
+18:59:43.007 18:59:43.006 task_run_all(): 9 tasks
+18:59:43.415 18:59:43.414 Erasing Data Validation map: fsd1
+18:59:43.436 18:59:43.434 Message to master: anchor=/media/amjed/ext4 mkdir complete.
+18:59:48.580 18:59:48.562 Message to master: anchor=/media/amjed/ext4 create complete.
+18:59:48.684 18:59:48.684 
+18:59:48.685 18:59:48.684 Miscellaneous statistics:
+18:59:48.685 18:59:48.685 FILE_CREATES        Files created:                                  160
+18:59:48.685 18:59:48.685 DIRECTORY_CREATES   Directories created:                             20
+18:59:48.685 18:59:48.685 WRITE_OPENS         Files opened for write activity:                160
+18:59:48.685 18:59:48.685 DIR_BUSY_MKDIR      Directory busy (mkdir):                           1
+18:59:48.686 18:59:48.685 DIR_EXISTS          Directory may not exist (yet):                    6
+18:59:48.686 18:59:48.686 FILE_CLOSES         Close requests:                                 160
+18:59:48.686 18:59:48.686 
+18:59:48.687 18:59:48.686 Dedup counters. Bytes written: 1.250g across: 256m (20.0%) on_sd: 0 (0.0%) dups: 1g (80.0%) resulting dedup=25.0% (4.00:1)
+18:59:48.689 18:59:48.689 Dedup options: 
+18:59:48.690 dedup_type:                            1
+18:59:48.690 dedup_ratio:                        4.00
+18:59:48.690 dedup_unit:                    1,048,576
+18:59:48.690 flipflop:                             no
+18:59:48.690 hot_dedup_sets:                        0
+18:59:48.690 hot_dedup_blocks:                      0
+18:59:48.690 dedup_sets_reqd:                      5%
+18:59:48.690 dedup_sets_used:                       8
+18:59:48.690 
+18:59:48.691 unique_blocks:                        32
+18:59:48.691 duplicate_blocks:                    128 (including 8 originals)
+18:59:48.691 dedup_pct:                         25.00
+18:59:48.691 dedup_adjusted:                    20.00
+18:59:48.691 total_size:                         160m
+18:59:48.691 unit_blocks:                         160
+18:59:48.691 
+18:59:48.691 Info only reliable if xfersize is multiple of dedupunit:
+18:59:48.691 uniques_written:                     256; expected 32; delta 224 
+18:59:48.691 duplicates_written:                1,024; expected 128; delta 896 
+18:59:48.691 Total writes:                      1,280; delta 1,120
+18:59:48.691 flipflops:                             0
+18:59:48.691 
+18:59:48.691 Dsim counts: Hash size:               40 (32 uniques + 8 sets)
+18:59:48.691 Dsim counts: Duplicates:             120
+18:59:48.692 Dsim counts: Ratio:                 4.00 (4.00000)
+18:59:48.692 
+18:59:48.692 18:59:48.689 Java Heap in MB. max: 1024.000; current:  128.000; used:   27.300; free:  100.700
+18:59:48.692 18:59:48.690 Maximum native memory allocation:   16,777,216; Current allocation:   16,777,216
+18:59:49.110 18:59:49.109 Writing control file for anchor=/media/amjed/ext4 at end of run.
+18:59:49.509 18:59:49.509 Completed control file for anchor=/media/amjed/ext4 at end of run.  dirs: 20/20 files: 160/160 sizes: 160m/160m/160/160m
+18:59:49.510 18:59:49.509 End of run
+18:59:49.510 18:59:49.509 **********
+18:59:49.510 
+18:59:49.510 
+18:59:49.817 18:59:49.817 Beginning of run setup
+18:59:49.818 18:59:49.817 **********************
+18:59:49.818 
+18:59:49.818 
+18:59:49.889 18:59:49.889 Starting initializeFileAnchor for rd=rd1 For loops: None anchor=fsd1
+18:59:49.890 18:59:49.890 Reading control file for anchor=/media/amjed/ext4
+18:59:49.891 18:59:49.890 Completed reading control file.
+18:59:49.891 18:59:49.891 Completed the creation of the directory list for /media/amjed/ext4: 20 directories.
+18:59:49.891 18:59:49.891 Generated 160 file names; total anchor size: 160m (167,772,160)
+18:59:49.892 18:59:49.891 No deletes and creates. Control file not cleared.
+18:59:49.892 18:59:49.891 During anchor creation for anchor=/media/amjed/ext4 there were 20 directories and 160 files
+18:59:49.892 18:59:49.892 Completed initializeFileAnchor for fsd1: 0.00
+18:59:49.893 18:59:49.893 Started 2 threads for fwd=fwd1,fsd=fsd1,operation=read
+18:59:49.893 18:59:49.893 Started 2 FwgThreads for rd=rd1 For loops: None
+18:59:49.893 18:59:49.893 Waiting for task synchronization
+18:59:49.893 18:59:49.893 Requesting full garbage collection
+18:59:49.893 18:59:49.893 GcTracker: cum:   1 intv:  0 ms:       0 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    33 free:    95 
+18:59:49.901 18:59:49.901 GcTracker: cum:   2 intv:  1 ms:       6 mss:  0.00% Heap_MB max:  1024 curr:   128 used:    23 free:   105 
+18:59:49.902 18:59:49.901 task_wait_start_complete() end
+
+<a name="_578866604"></a><i><b>18:59:50.001 Starting RD=rd1; elapsed=30; fwdrate=max. For loops: None</b></i>
+
+18:59:50.005 18:59:50.004 task_run_all(): 3 tasks
+19:00:20.239 19:00:20.239 
+19:00:20.239 19:00:20.239 Miscellaneous statistics:
+19:00:20.239 19:00:20.239 READ_OPENS          Files opened for read activity:              69,944
+19:00:20.239 19:00:20.239 FILE_BUSY           File busy:                                      410
+19:00:20.239 19:00:20.239 FILE_CLOSES         Close requests:                              69,944
+19:00:20.239 19:00:20.239 
+19:00:20.239 19:00:20.239 Dedup counters. Bytes written: 0 across: 0 (NaN%) on_sd: 0 (NaN%) dups: 0 (NaN%) resulting dedup=NaN% (NaN:1)
+19:00:20.240 19:00:20.240 Dedup options: 
+19:00:20.240 dedup_type:                            1
+19:00:20.240 dedup_ratio:                        4.00
+19:00:20.240 dedup_unit:                    1,048,576
+19:00:20.240 flipflop:                             no
+19:00:20.240 hot_dedup_sets:                        0
+19:00:20.240 hot_dedup_blocks:                      0
+19:00:20.240 dedup_sets_reqd:                      5%
+19:00:20.240 dedup_sets_used:                       8
+19:00:20.240 
+19:00:20.240 unique_blocks:                        32
+19:00:20.240 duplicate_blocks:                    128 (including 8 originals)
+19:00:20.240 dedup_pct:                         25.00
+19:00:20.240 dedup_adjusted:                    20.00
+19:00:20.240 total_size:                         160m
+19:00:20.240 unit_blocks:                         160
+19:00:20.241 
+19:00:20.241 Info only reliable if xfersize is multiple of dedupunit:
+19:00:20.241 uniques_written:                       0; expected 32; delta -32 
+19:00:20.241 duplicates_written:                    0; expected 128; delta -128 
+19:00:20.241 Total writes:                          0; delta -160
+19:00:20.241 flipflops:                             0
+19:00:20.241 
+19:00:20.241 Dsim counts: Hash size:               40 (32 uniques + 8 sets)
+19:00:20.241 Dsim counts: Duplicates:             120
+19:00:20.241 Dsim counts: Ratio:                 4.00 (4.00000)
+19:00:20.241 
+19:00:20.241 19:00:20.240 Java Heap in MB. max: 1024.000; current:  128.000; used:   30.682; free:   97.318
+19:00:20.241 19:00:20.240 Maximum native memory allocation:   20,971,520; Current allocation:    4,194,304
+19:00:20.241 19:00:20.240 Writing control file for anchor=/media/amjed/ext4 at end of run.
+19:00:20.625 19:00:20.625 Completed control file for anchor=/media/amjed/ext4 at end of run.  dirs: 20/20 files: 160/160 sizes: 160m/160m/160/160m
+19:00:20.625 19:00:20.625 End of run
+19:00:20.626 19:00:20.625 **********
+19:00:20.626 
+19:00:20.626 
+19:00:21.164 19:00:21.164 Master is requesting slave shutdown
+19:00:21.165 19:00:21.164 Java Heap in MB. max: 1024.000; current:  128.000; used:   32.472; free:   95.528
